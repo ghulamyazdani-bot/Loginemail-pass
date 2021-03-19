@@ -1,0 +1,251 @@
+/* backgrond */
+/* backgrond */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #053977;
+  display: flex;
+  justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 10000000000;
+  }
+  
+  /* Vector 2 */
+  
+  .v2{
+  position: fixed;
+  width: 1091.08px;
+  height: 1071.5px;
+  left: -210.5px;
+  top: -10px;
+  clip-path: circle(80% at 20% 28%);
+  background: #0058A9;
+  z-index: 20;
+  }
+  
+  
+  /* Vector 1 */
+  
+  .v1{
+  position: fixed;
+  width: 1021.24px;
+  height: 1157px;
+  left: -106px;
+  top: -306px;
+  clip-path: circle(60% at 20% 28%);
+  background: #56AEFF;
+  z-index: 30;
+  
+  }
+  
+  /* Header */
+  
+  .header{
+    position: absolute;
+    /* width: 1440px; */
+    /* height: 138px; */
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 10000;
+    padding: 1rem;
+    background: #000000;
+    padding: 1rem;
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.8px;
+    line-height: 269.5%;
+/* or 140px */
+
+letter-spacing: 0.11em;
+
+color: #FFFFFF;
+    border-radius: 0px 0px 65px 65px;
+    color: #fff;
+    }
+/* Mask Detection app */
+
+.webcam__container ,
+.msg__container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 100000000;
+}
+
+.webcam__container{
+    position: absolute;
+width: 456px;
+height: 424px;
+left: 730px;
+top: 274px;
+
+background: #000000;
+border-radius: 33px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100000000;
+}
+
+.green ,
+.red {
+    padding: 0.8rem;
+    margin: 1rem;
+    border-radius: 10px;
+    
+}
+
+.green {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    left: 400px;
+    top: 755px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20.8px;
+
+/* or 78px */
+
+letter-spacing: 0.11em;
+
+color: #000000;
+    
+    background: #04FBA2;
+    border-radius: 19px;
+    /* color:  */
+}
+
+.red {
+    
+position: absolute;
+width: 500px;
+height: 50px;
+left: 1000px;
+top: 755px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20.8px;
+
+/* identical to box height, or 78px */
+
+letter-spacing: 0.11em;
+
+color: #000000;
+
+
+background: #EA001C;
+border-radius: 19px;
+}
+
+.mask{
+position: absolute;
+width: 837px;
+height: 85px;
+left: 426px;
+top: 0px;
+
+font-family: Righteous;
+font-style: normal;
+font-weight: normal;
+font-size: 51.8px;
+line-height: 269.5%;
+/* or 140px */
+
+letter-spacing: 0.11em;
+
+color: #FFFFFF;
+}
+
+
+/* MASK-5-900x600-1 1 */
+
+.webcam{
+position: fixed;
+width: 500px;
+height: 500px;
+left: 300px;
+top: 200px;
+image-resolution: 800  800;
+image-orientation: flip ;
+border-radius: 110px;
+z-index: 2000000000;
+}
+
+.label-container{
+    display: flex;
+}
+
+.label-container div{
+    margin-right: 5rem;
+    
+   
+}
+.label-container div:first-child{
+    margin-right: 0;
+    position: absolute;
+width: 366px;
+height: 78px;
+left: 180px;
+top: 580px;
+font-family: Roboto;
+font-size: x-large;
+
+}
+
+.label-container div:last-child{margin-right: 0;
+    
+    position: absolute;
+width: 366px;
+height: 78px;
+left: 780px;
+top: 580px;
+z-index: 200000000000;
+font-family: Roboto;
+font-size: x-large;
+
+
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
+    height: min-content;
+    position: absolute;
+    
+    transform: translate(-50%, -50%);
+    left: 660px;
+    top: 300px;
+ 
+}
+.start{
+    position: absolute;
+width: 172px;
+height: 33px;
+left: 580px;
+top: 520px;
+
+background: #C4C4C4;
+z-index: 100000000000000;
+}
+#web-container{
+    
+left: 580px;
+top: 300px;
+}
+

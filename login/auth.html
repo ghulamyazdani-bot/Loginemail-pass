@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+
+<!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">
+      <!-- header -->
+    <div class="header">
+        <h1>Mask Detection App</h1>   
+    </div>
+    <div class="contain">
+      <form class="login__container">
+          <!-- <h1>Login</h1> -->
+          <label for="mailid">Email:</label>
+          <input type="email" name="email" id="email" >
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="pass" >
+          <button id="signup" class="signup">Signup</button>
+          <button id="login" class="login__btn">Login</button>
+          <p class="google">login with google</p>
+          <input id="maillogin" type="image" class="logimg" src="image8-2.jpg" name="submit" width="100" height="48" alt="submit"/> 
+      </form>
+      
+    </div>
+        <!-- vector 2 -->
+       <div class="v2"></div>
+        <!-- vector 1 -->
+        <div class="v1"></div>
+  </div>
+    
+  
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCuBCg4-tZNtyHUVFBgwu31gHUqDK5vWv8",
+    authDomain: "maskdetection-app.firebaseapp.com",
+    projectId: "maskdetection-app",
+    storageBucket: "maskdetection-app.appspot.com",
+    messagingSenderId: "194741526529",
+    appId: "1:194741526529:web:340dde0b4874c4379ca000"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  document.getElementById("signup").addEventListener('click' , signUpUser)
+
+function signUpUser() {
+  console.log('calling');
+  let email= document.getElementById('email').value
+  let password= document.getElementById('pass').value
+  firebase.auth().createUserWithEmailAndPassword(email , password).catch(e=>{
+    console.log(e);
+  })
+  
+}
+ 
+</script>
+</body>
+
+</html>
